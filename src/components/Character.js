@@ -37,6 +37,8 @@ color: #362053;
 
 
 
+
+
 const Character = props => {
     return (
 
