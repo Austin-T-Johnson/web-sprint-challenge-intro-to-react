@@ -13,10 +13,10 @@ const App = () => {
   // sync up with, if any.
 
   useEffect(() => {
-    axios.get("https://swapi.dev/api/people")
+    axios.get("https://swapi.dev/api/people/")
     .then(res => {
       console.log(res.data.results);
-      setCharactersdata(res.data.results)
+      setCharactersdata(res.data)
     })
     .catch(err => {
       console.log(err)
